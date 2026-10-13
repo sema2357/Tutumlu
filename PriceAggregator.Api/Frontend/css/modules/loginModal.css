@@ -1,0 +1,446 @@
+/* Login modal */
+.login-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.login-modal.hidden {
+  display: none;
+}
+
+.login-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 39, 66, 0.55);
+  backdrop-filter: blur(3px);
+}
+
+.login-modal-content {
+  position: relative;
+  display: grid;
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+  background: var(--color-surface);
+  border-radius: 28px;
+  box-shadow: 0 28px 80px rgba(9, 35, 64, 0.35);
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .login-modal-content {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+/* Left brand panel */
+.login-modal-aside {
+  position: relative;
+  display: none;
+  min-height: 590px;
+  overflow: hidden;
+  padding: 2.5rem;
+  background: var(--steel);
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  .login-modal-aside {
+    display: block;
+  }
+}
+
+.login-modal-aside-ring {
+  position: absolute;
+  top: -5rem;
+  right: -5rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  border: 38px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-modal-aside-glow {
+  position: absolute;
+  bottom: -6rem;
+  left: -5rem;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background: rgba(73, 164, 229, 0.5);
+  filter: blur(40px);
+}
+
+.login-modal-aside-inner {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.login-modal-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.login-modal-brand-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: #fff;
+  color: var(--steel);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.login-modal-brand-text {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.login-modal-aside-body {
+  margin: auto 0;
+}
+
+.login-modal-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: #a9ddff;
+}
+
+.login-modal-headline {
+  margin-top: 1rem;
+  max-width: 300px;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -1.4px;
+}
+
+.login-modal-subtext {
+  margin-top: 1.25rem;
+  max-width: 285px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #dcecff;
+}
+
+.login-modal-perk {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #dcecff;
+}
+
+.login-modal-perk-icon {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Right form panel */
+.login-modal-form-section {
+  position: relative;
+  padding: 2.5rem 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .login-modal-form-section {
+    padding: 3rem;
+  }
+}
+
+.login-modal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.login-modal-close:hover {
+  background: #dbeaf5;
+}
+
+.login-modal-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.login-modal-form-wrap {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.login-modal-brand-mobile {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 769px) {
+  .login-modal-brand-mobile {
+    display: none;
+  }
+}
+
+.login-modal-eyebrow-small {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  color: var(--color-primary);
+}
+
+.login-modal-title {
+  margin-top: 0.5rem;
+  font-size: 1.875rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--navy);
+}
+
+.login-modal-desc {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: var(--color-text-secondary);
+}
+
+.login-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.login-field {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #294763;
+}
+
+.login-field input {
+  margin-top: 0.5rem;
+  height: 48px;
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #fbfdff;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.login-field input::placeholder {
+  color: #9aabba;
+}
+
+.login-field input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(40, 102, 233, 0.1);
+}
+
+.login-field select {
+  margin-top: 0.5rem;
+  height: 48px;
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #fbfdff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%234a6b8a' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E") no-repeat right 1rem center;
+  background-size: 12px;
+  padding: 0 2.75rem 0 1rem;
+  font-size: 0.875rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--color-text);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.login-field select:invalid {
+  color: #9aabba;
+}
+
+.login-field select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(40, 102, 233, 0.1);
+}
+
+.login-password-wrap {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.login-password-wrap input {
+  margin-top: 0;
+  padding-right: 3.5rem;
+}
+
+.login-password-toggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.login-form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.login-remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #59718a;
+  cursor: pointer;
+}
+
+.login-remember input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+}
+
+.login-forgot {
+  border: none;
+  background: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.login-form-message {
+  margin: -0.5rem 0 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.login-form-message.hidden {
+  display: none;
+}
+
+.login-field.hidden {
+  display: none;
+}
+
+.login-form-message.error {
+  color: var(--color-danger);
+}
+
+.login-submit {
+  height: 48px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(40, 102, 233, 0.24);
+  transition: background 0.15s;
+}
+
+.login-submit:hover {
+  background: var(--color-primary-dark);
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #9aabba;
+}
+
+.login-divider span {
+  height: 1px;
+  flex: 1;
+  background: #e4edf5;
+}
+
+.login-google-btn {
+  display: flex;
+  height: 48px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #334e68;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.login-google-btn:hover {
+  background: #f5f9fc;
+}
+
+.login-google-icon {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #e64a35;
+}
+
+.login-signup-text {
+  margin-top: 1.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.login-signup-link {
+  border: none;
+  background: none;
+  font-weight: 800;
+  color: var(--color-primary);
+  cursor: pointer;
+}

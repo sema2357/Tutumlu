@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "dotnet run --project PriceAggregator.Api --launch-profile http",
+    "dev": "dotnet run --project PriceAggregator.Api --launch-profile http",
+    "dev:all": "dotnet run --project PriceAggregator.Api --launch-profile http & dotnet run --project PriceAggregator.Worker; trap 'kill %1' EXIT",
+    "api": "dotnet run --project PriceAggregator.Api --launch-profile http",
+    "worker": "dotnet run --project PriceAggregator.Worker",
+    "scraper": "dotnet run --project PriceAggregator.Scraper"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}

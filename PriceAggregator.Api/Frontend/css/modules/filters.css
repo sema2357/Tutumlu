@@ -1,0 +1,419 @@
+/* Filters panel */
+.filters-panel {
+  width: 250px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #edf1f5;
+  border-radius: 18px;
+  padding: 1rem;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.05);
+  position: sticky;
+  top: calc(var(--header-height) + 1rem);
+  max-height: calc(100vh - var(--header-height) - 2rem);
+  overflow-y: auto;
+}
+
+.filters-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.filters-header h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.clear-btn {
+  background: #eef5fb;
+  color: var(--navy);
+  border: none;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clear-btn:hover {
+  background: var(--navy);
+  color: white;
+  text-decoration: none;
+}
+
+.filter-group {
+  margin-bottom: 0.65rem;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+.filter-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.2rem 0;
+  margin-bottom: 0.3rem;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.filter-group-header:hover .filter-group-title {
+  color: var(--color-primary);
+}
+
+.filter-group-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--navy);
+  transition: color 0.15s ease;
+}
+
+.filter-selected-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.filter-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.15s ease;
+}
+
+.filter-group-header:hover .filter-toggle-icon {
+  color: var(--navy);
+}
+
+.filter-group.collapsed .filter-toggle-icon {
+  transform: rotate(-90deg);
+}
+
+.filter-group.collapsed .filter-group-body {
+  display: none;
+}
+
+.filter-group select,
+.filter-group input[type="number"] {
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  border-radius: 10px;
+  border: 1px solid #e6ebf0;
+  background: white;
+  transition: 0.2s;
+  font-size: 0.8125rem;
+  font-family: inherit;
+  color: var(--color-text);
+}
+
+.filter-group select:focus,
+.filter-group input[type="number"]:focus {
+  outline: none;
+  border-color: var(--steel);
+  box-shadow: 0 0 0 3px rgba(47, 102, 144, 0.12);
+}
+
+.attribute-checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.attribute-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.45rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: var(--color-text);
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    padding-left 0.2s ease,
+    transform 0.2s ease;
+}
+
+.attribute-checkbox:hover {
+  background: #f7f9fc;
+  padding-left: 0.65rem;
+  transform: translateX(2px);
+}
+
+.attribute-checkbox[hidden] {
+  display: none;
+}
+
+.attribute-checkbox span:first-of-type {
+  flex: 1;
+}
+
+.attribute-count {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.filter-search-box {
+  margin-bottom: 0.35rem;
+}
+
+.facet-search-input {
+  width: 100%;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.75rem;
+  font-family: inherit;
+  color: var(--color-text);
+  box-sizing: border-box;
+  background: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.facet-search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15);
+}
+
+.attribute-show-more {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px dashed rgba(16, 185, 129, 0.4);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.attribute-show-more:hover {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: var(--color-primary);
+}
+
+.price-range {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.price-range input {
+  flex: 1;
+  min-width: 0;
+}
+
+.range-sep {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.apply-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.625rem;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.apply-btn:hover {
+  background: var(--color-primary-dark);
+}
+
+/* Products top toolbar (Results count, Price filter & Sort filter) */
+.products-top-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  background: #ffffff;
+  border: 1px solid #edf1f5;
+  border-radius: 14px;
+  padding: 0.65rem 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-left .results-count {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.top-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.top-filter-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.top-price-inputs {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.top-price-inputs input[type="number"] {
+  width: 78px;
+  padding: 0.38rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 0.78rem;
+  font-family: inherit;
+  color: var(--color-text);
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.top-price-inputs input[type="number"]:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15);
+}
+
+.top-apply-btn {
+  padding: 0.38rem 0.75rem;
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.top-apply-btn:hover {
+  background: var(--color-primary-dark);
+}
+
+.top-apply-btn:active {
+  transform: scale(0.97);
+}
+
+.top-select-wrap select {
+  padding: 0.38rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.top-select-wrap select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15);
+}
+
+/* Results bar (active filter tags shown above the product grid) */
+.results-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.results-bar:empty,
+.active-filters:empty {
+  display: none;
+}
+
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.625rem;
+  border-radius: 999px;
+}
+
+.filter-tag button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.filter-tag button:hover {
+  opacity: 1;
+}

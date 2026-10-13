@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutumlu — Ürün Karşılaştırma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/pages/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="header-wrap">
+      <header class="site-header">
+        <div class="header-inner">
+          <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Tutumlu Logo" class="logo-image" />
+          </a>
+
+          <button type="button" id="categoryMenuTrigger" class="category-nav-trigger">
+            <span class="category-hamburger">
+              <span></span><span></span><span></span>
+            </span>
+            <span>KATEGORİLER</span>
+          </button>
+
+          <div class="search-bar-wrap">
+            <form id="searchForm" class="search-bar" role="search">
+              <svg class="search-icon" viewBox="0 0 16 16" fill="none">
+                <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.6" />
+                <path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Ürün veya marka ara..."
+                autocomplete="off"
+              />
+              <button type="submit" class="sr-only">Ara</button>
+            </form>
+            <div id="searchSuggestions" class="search-suggestions"></div>
+          </div>
+
+          <div class="header-actions">
+            <button type="button" class="login-btn">Giriş Yap</button>
+          </div>
+        </div>
+      </header>
+
+      <div id="categoryMegaMenu" class="category-mega-menu">
+        <div class="mega-menu-inner">
+          <ul class="mega-col-0"></ul>
+          <ul class="mega-col-1"></ul>
+          <div class="mega-col-2">
+            <p class="mega-col-2-title"></p>
+            <ul class="mega-col-2-list"></ul>
+          </div>
+          <div class="mega-col-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-content compare-page-wrap">
+      <h1 class="compare-page-title">Ürün Karşılaştırma</h1>
+      <div id="compareContent"></div>
+    </main>
+
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button id="closeModal" class="modal-close" aria-label="Kapat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+        <h2 id="modalTitle" class="modal-title"></h2>
+        <div class="modal-body">
+          <div class="modal-col-offers">
+            <p class="modal-subtitle">Mağaza fiyatları</p>
+            <div id="offers" class="offers-list"></div>
+            <div class="price-history-section">
+              <p class="price-history-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+                Fiyat Geçmişi (Son 30 Gün)
+              </p>
+              <div class="chart-container">
+                <canvas id="priceHistoryChart"></canvas>
+              </div>
+            </div>
+            <div class="similar-products-section">
+              <p class="modal-subtitle">Benzer ürünler</p>
+              <div id="similarProducts" class="similar-product-list"></div>
+            </div>
+          </div>
+          <div class="modal-col-info">
+            <p class="modal-subtitle">Ürün bilgileri</p>
+            <div id="productInfo" class="product-info-panel"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginModal" class="login-modal hidden" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle">
+      <div class="login-modal-backdrop"></div>
+      <div class="login-modal-content">
+        <aside class="login-modal-aside">
+          <div class="login-modal-aside-ring"></div>
+          <div class="login-modal-aside-glow"></div>
+          <div class="login-modal-aside-inner">
+            <div class="login-modal-brand">
+              <span class="login-modal-brand-icon">T</span>
+              <span class="login-modal-brand-text">Tutumlu</span>
+            </div>
+            <div class="login-modal-aside-body">
+              <p class="login-modal-eyebrow">AKILLI ALIŞVERİŞ</p>
+              <h2 class="login-modal-headline">Fiyatları takip et, daha tutumlu alışveriş yap.</h2>
+              <p class="login-modal-subtext">Favori ürünlerini kaydet, fiyat düştüğünde ilk sen haberdar ol.</p>
+            </div>
+            <div class="login-modal-perk"><span class="login-modal-perk-icon">✓</span> Ücretsiz hesap, zahmetsiz takip</div>
+          </div>
+        </aside>
+        <section class="login-modal-form-section">
+          <button type="button" id="closeLoginModal" class="login-modal-close" aria-label="Giriş ekranını kapat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+          <div class="login-modal-form-wrap">
+            <div class="login-modal-brand-mobile">
+              <span class="login-modal-brand-icon">T</span>
+            </div>
+            <p id="loginModalEyebrow" class="login-modal-eyebrow-small">HOŞ GELDİN</p>
+            <h1 id="loginModalTitle" class="login-modal-title">Giriş yap</h1>
+            <p id="loginModalDesc" class="login-modal-desc">Hesabına giriş yaparak takip ettiğin fiyatlara ulaş.</p>
+
+            <form id="loginForm" class="login-form" novalidate>
+              <label id="loginNameField" class="login-field hidden">
+                Ad
+                <input type="text" id="loginName" placeholder="Adınız" autocomplete="given-name" />
+              </label>
+              <label id="loginSurnameField" class="login-field hidden">
+                Soyad
+                <input type="text" id="loginSurname" placeholder="Soyadınız" autocomplete="family-name" />
+              </label>
+              <label class="login-field">
+                E-posta adresi
+                <input type="email" id="loginEmail" required placeholder="ornek@mail.com" autocomplete="email" maxlength="255" />
+              </label>
+              <label id="loginPhoneField" class="login-field hidden">
+                Telefon numarası
+                <input type="tel" id="loginPhone" placeholder="05xxxxxxxxx" autocomplete="tel" maxlength="11" inputmode="numeric" pattern="0?5[0-9]{9}" />
+              </label>
+              <label id="loginBirthdateField" class="login-field hidden">
+                Doğum tarihi
+                <input type="date" id="loginBirthdate" />
+              </label>
+              <label id="loginCityField" class="login-field hidden">
+                Şehir
+                <select id="loginCity">
+                  <option value="">Seçiniz</option>
+                  <option>İstanbul</option>
+                  <option>Ankara</option>
+                  <option>İzmir</option>
+                  <option>Bursa</option>
+                  <option>Antalya</option>
+                  <option>Adana</option>
+                  <option>Gaziantep</option>
+                  <option>Konya</option>
+                  <option>Kayseri</option>
+                  <option>Mersin</option>
+                </select>
+              </label>
+              <label class="login-field">
+                Şifre
+                <div class="login-password-wrap">
+                  <input type="password" id="loginPassword" required minlength="6" placeholder="Şifreni gir" autocomplete="current-password" />
+                  <button type="button" id="toggleLoginPassword" class="login-password-toggle">Göster</button>
+                </div>
+              </label>
+              <label id="loginPasswordConfirmField" class="login-field hidden">
+                Şifre Tekrar
+                <div class="login-password-wrap">
+                  <input type="password" id="loginPasswordConfirm" minlength="6" placeholder="Şifreni tekrar gir" autocomplete="new-password" />
+                  <button type="button" id="toggleLoginPasswordConfirm" class="login-password-toggle">Göster</button>
+                </div>
+              </label>
+              <div class="login-form-row">
+                <label class="login-remember">
+                  <input type="checkbox" id="loginRemember" checked /> Beni hatırla
+                </label>
+                <button type="button" class="login-forgot">Şifremi unuttum</button>
+              </div>
+              <p id="loginFormMessage" class="login-form-message hidden"></p>
+              <button type="submit" id="loginSubmitBtn" class="login-submit">Giriş yap</button>
+            </form>
+
+            <div class="login-divider"><span></span>veya<span></span></div>
+
+            <button type="button" id="loginGoogleBtn" class="login-google-btn">
+              <span class="login-google-icon">G</span> Google ile devam et
+            </button>
+
+            <p class="login-signup-text"><span id="loginSignupPrompt">Henüz hesabın yok mu?</span> <button type="button" id="loginSignupToggle" class="login-signup-link">Hemen kayıt ol</button></p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="logoutModal" class="logout-modal hidden" role="dialog" aria-modal="true" aria-labelledby="logoutModalTitle">
+      <div class="logout-modal-backdrop"></div>
+      <div class="logout-modal-content">
+        <div class="logout-modal-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+        </div>
+        <h2 id="logoutModalTitle" class="logout-modal-title">Çıkış yapmak istiyor musun?</h2>
+        <p class="logout-modal-desc">Takiplerin ve fiyat alarmların hesabında güvende kalacak.</p>
+        <div class="logout-modal-actions">
+          <button type="button" id="logoutCancelBtn" class="logout-cancel-btn">Vazgeç</button>
+          <button type="button" id="logoutConfirmBtn" class="logout-confirm-btn">Çıkış yap</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/pages/compare.js"></script>
+  </body>
+</html>

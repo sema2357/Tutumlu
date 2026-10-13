@@ -1,0 +1,32 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.vs
+*.user
+*.suo
+
+# Build artifacts
+bin/
+obj/
+out/
+
+# NuGet
+packages/
+*.nupkg
+*.lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# CI/CD
+.github/
+.gitlab-ci.yml

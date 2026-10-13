@@ -1,0 +1,59 @@
+## Visual Studio / .NET ##
+bin/
+obj/
+out/
+.vs/
+.idea/
+.claude/
+.gemini/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userhost
+*.userlibraries
+*.cache
+*.log
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][InN]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Node / Web artifacts
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
+mutlak-kategori.pdf
+
+# Local Scratch & Scripts
+scratch/
+check_categories.csx
+query.sql
+
+# Environment and Secret Configurations
+*.env
+*.env.*
+!*.env.example
+appsettings*.Development.json
+appsettings*.local.json
+appsettings*.Local.json

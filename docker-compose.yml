@@ -1,0 +1,122 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: tutumlu_mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD:-YourStrongPassword2026!}"
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools18/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "${MSSQL_SA_PASSWORD:-YourStrongPassword2026!}", "-Q", "SELECT 1", "-C"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+  init-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: tutumlu_init_db
+    depends_on:
+      mssql:
+        condition: service_healthy
+    volumes:
+      - ./schema.sql:/scripts/schema.sql:ro
+      - ./seed_categories.sql:/scripts/seed_categories.sql:ro
+      - ./seed_seller_categories.sql:/scripts/seed_seller_categories.sql:ro
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        echo "=== SQL Server PriceAggregatorDB Veritabanı Oluşturuluyor ==="
+        /opt/mssql-tools18/bin/sqlcmd -S mssql -U sa -P "${MSSQL_SA_PASSWORD:-YourStrongPassword2026!}" -C -f 65001 -Q "IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'PriceAggregatorDB') CREATE DATABASE PriceAggregatorDB;"
+        echo "=== schema.sql Tabloları ve İndeksleri Yükleniyor ==="
+        /opt/mssql-tools18/bin/sqlcmd -S mssql -U sa -P "${MSSQL_SA_PASSWORD:-YourStrongPassword2026!}" -d PriceAggregatorDB -C -f 65001 -i /scripts/schema.sql
+        echo "=== seed_categories.sql Kategorileri Tohumlanıyor ==="
+        /opt/mssql-tools18/bin/sqlcmd -S mssql -U sa -P "${MSSQL_SA_PASSWORD:-YourStrongPassword2026!}" -d PriceAggregatorDB -C -f 65001 -i /scripts/seed_categories.sql
+        echo "=== seed_seller_categories.sql Mağaza Reyonları Tohumlanıyor ==="
+        /opt/mssql-tools18/bin/sqlcmd -S mssql -U sa -P "${MSSQL_SA_PASSWORD:-YourStrongPassword2026!}" -d PriceAggregatorDB -C -f 65001 -i /scripts/seed_seller_categories.sql
+        echo "=== Veritabanı kurulumu başarıyla tamamlandı! ==="
+    restart: "no"
+
+  elasticsearch:
+    image: elasticsearch:8.13.4
+    container_name: tutumlu_elasticsearch
+    environment:
+      - node.name=elasticsearch
+      - cluster.name=tutumlu-cluster
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=true
+      - xpack.security.http.ssl.enabled=false
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-YourElasticPassword2026!}
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -u elastic:${ELASTIC_PASSWORD:-YourElasticPassword2026!} -s http://localhost:9200/_cluster/health | grep -vq '\"status\":\"red\"'"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 30s
+    restart: unless-stopped
+
+  redis:
+    image: redis:alpine
+    container_name: tutumlu_redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  api:
+    profiles: ["app"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: api-runtime
+    container_name: tutumlu_api
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=mssql,1433;Database=PriceAggregatorDB;User Id=sa;Password=${MSSQL_SA_PASSWORD:-YourStrongPassword2026!};TrustServerCertificate=True;Encrypt=false"
+      Jwt__Secret: "${JWT_SECRET:-YourStrongJwtSecretKeyMustBeAtLeast32CharsLong!}"
+      ConnectionStrings__Redis: "redis:6379"
+      Elasticsearch__Uri: "http://elasticsearch:9200"
+      Elasticsearch__Username: "elastic"
+      Elasticsearch__Password: "${ELASTIC_PASSWORD:-YourElasticPassword2026!}"
+      Elasticsearch__DefaultIndex: "tutumlu_products"
+    ports:
+      - "5196:8080"
+    depends_on:
+      mssql:
+        condition: service_healthy
+      init-db:
+        condition: service_completed_successfully
+      elasticsearch:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: unless-stopped
+
+  worker:
+    profiles: ["app"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: worker-runtime
+    container_name: tutumlu_worker
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=mssql,1433;Database=PriceAggregatorDB;User Id=sa;Password=${MSSQL_SA_PASSWORD:-YourStrongPassword2026!};TrustServerCertificate=True;Encrypt=false"
+    depends_on:
+      mssql:
+        condition: service_healthy
+      init-db:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+volumes:
+  mssql_data:
+  es_data:

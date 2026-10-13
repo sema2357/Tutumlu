@@ -1,0 +1,18 @@
+/* Entry stylesheet — index.html links only this file. Section files stay independently
+   editable; this just fixes their load order (later files may rely on custom properties
+   or base rules defined earlier). */
+@import "../shared/base.css";
+@import "../shared/layout.css";
+@import "../modules/header.css";
+@import "../modules/categoryMenu.css";
+@import "../modules/homeHero.css";
+@import "../modules/filters.css";
+@import "../modules/productGrid.css";
+@import "../modules/compareBar.css";
+@import "../modules/modal.css";
+@import "../modules/loginModal.css";
+@import "../modules/logoutModal.css";
+@import "../modules/notificationModal.css";
+@import "../modules/account.css";
+@import "compare.css";
+@import "../shared/responsive.css";

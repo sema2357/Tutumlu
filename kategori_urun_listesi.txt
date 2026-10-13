@@ -1,0 +1,557 @@
+# Kategori ve Çekilecek Genel Ürün Arama Terimleri Listesi
+
+> **Not:** Ürün aramasının geniş kapsamlı olması ve tüm markaları/modelleri içerebilmesi için marka ve spesifik model isimleri kaldırılmıştır. Yalnızca **en alt seviyedeki (Tier 3 / Yaprak)** kategorilerin altına genel ve kapsayıcı arama terimleri eklenmiştir.
+
+---
+
+## • Ofis Kırtasiye & Kağıt Ürünleri
+
+### → Kalemler
+* **❖ Asetat Kalemleri**: Asetat Kalemi
+* **❖ Cam ve Boya Marker Kalem**: Cam Kalemi, Akrilik Boya Kalemi
+* **❖ Dolma Kalemler**: Dolma Kalem
+* **❖ Fosforlu Kalemler**: Fosforlu Kalem
+* **❖ Roller ve Jel Kalemler**: Roller Kalem, Jel Kalem, İğne Uçlu Kalem, Fineliner Kalem
+* **❖ Kalem Uçları**: Kalem Ucu
+* **❖ Keçeli Kalemler**: Keçeli Kalem
+* **❖ Kurşun Kalemler**: Kurşun Kalem
+* **❖ Kalem Mürekkebi**: Kalem Mürekkebi
+* **❖ Kaligrafi Kalemleri**: Kaligrafi Kalemi
+* **❖ Marker Kalem**: Marker Kalem
+* **❖ Prestij ve İmza Kalemleri**: Prestij Kalem, İmza Kalemi, Lüks Kalem
+* **❖ Tükenmez Kalemler**: Tükenmez Kalem
+* **❖ Tahta Kalemi**: Tahta Kalemi
+* **❖ Teknik Çizim Kalemleri**: Teknik Çizim Kalemi
+* **❖ Versatil Uçlu Kalemler**: Versatil Kalem, Uçlu Kalem
+
+### → Defterler
+* **❖ Ofis Defterleri**: Ofis Defteri, Çizgili Defter, Kareli Defter
+* **❖ Okul Defterleri**: Okul Defteri
+* **❖ Bloknotlar**: Bloknot
+* **❖ Ticari Defter ve Evraklar**: Ticari Defter ve Evraklar
+* **❖ Fihristler**: Fihrist Defteri
+
+### → Masaüstü Gereçleri
+* **❖ Ataşlar**: Ataş, Klips
+* **❖ Bant**: Şeffaf Bant, Ofis Bandı
+* **❖ Bant Kesici**:Bant Kesici
+* **❖ Dekoratif Masaüstü Ürünler**: Masaüstü Organizer, ofis süsü, biblo
+* **❖ Daksil**: daksil
+* **❖ Delgeçler**: Delgeç
+* **❖ Evrak Mandalları**: Evrak Mandalı
+* **❖ Evrak Rafları**: Evrak Rafı
+* **❖ Harita Çivisi**: Harita Çivisi
+* **❖ Raptiye**: Raptiye
+* **❖ İğneler**: Toplu İğne
+* **❖ Hesap Makineleri**: Hesap Makinesi
+* **❖ Kalemtıraşlar**: Kalemtıraş
+* **❖ Kartvizitlikler**: Kartvizitlik
+* **❖ Kaşe ve Gereçleri**: Otomatik Kaşe, Istampa Mürekkebi
+* **❖ Magazinlikler**: Magazinlik, Dikey Evrak Kutusu
+* **❖ Maket Bıçağı**: Maket Bıçağı
+* **❖ Cetveller**: Cetvel
+* **❖ Masaüstü Set ve Kalemlikler**: Kalemlik, Masaüstü Set
+* **❖ Paket Lastikleri**: Paket Lastiği
+* **❖ Silgiler**: Silgi
+* **❖ Yapışkanlı Not Kağıtları**: Yapışkanlı Not Kağıdı, Post-it
+* **❖ Zımba Teli / Zımba Sökücü**: Zımba Teli, Zımba Sökücü
+* **❖ Zımbalar**: Zımba Makinesi
+* **❖ Makas**: Ofis Makası
+* **❖ Pul Süngeri**: Pul Süngeri
+* **❖ Yapıştırıcı**: Stick Yapıştırıcı, Sıvı Yapıştırıcı, Japon Yapıştırıcı
+* **❖ Küp Not Kağıtları**: Küp Not Kağıdı
+
+### → Pano ve Not Kağıdı
+* **❖ Flipchart Kağıdı**: Flipchart Sunum Kağıdı
+* **❖ Küp Not Kağıtları**: Küp Not Kağıdı
+* **❖ Yapışkanlı Not Kağıtları**: Yapışkanlı Not Kağıdı, post-it
+
+### → Okul Ürünleri
+* **❖ Okul Çantaları**: Okul Çantası
+* **❖ Öğrenci Dosyaları**: Çıtçıtlı Dosya, Öğrenci Dosyası
+* **❖ Kurşun Kalemler**: Kurşun Kalem
+* **❖ Oyun Hamuru**: Oyun Hamuru
+* **❖ El İşi Malzemeleri**: El İşi Kağıdı, fon kartonu, kil seti, eva ,mukavva
+* **❖ Cetveller**: Cetvel
+* **❖ Tebeşir**: Yazı Tebeşiri (Beyaz / Renkli)
+* **❖ Bayrak ve Flama**: bayrak
+* **❖ Ataşlar**: Metal Ataş
+* **❖ Boyama Ürünleri**: Kuru Boya, Sulu Boya, Pastel Boya, keçeli boya, parmak boya, guaj boya, boyama fırçası, mum boya
+
+### → Sunum ve Planlama
+* **❖ Cilt Kapakları**: Cilt Kapağı
+* **❖ Flipchart Kağıdı**: Flipchart Kağıdı
+* **❖ Bayrak ve Flama**: Bayrak
+* **❖ Laminasyon Filmleri**: Laminasyon Filmi
+* **❖ Mantar Panolar**: Mantar Pano
+* **❖ Spiraller ve Üçgen Profiller**: Cilt Spirali, Spiral, üçgen profil
+* **❖ Tahta Silgisi**: Tahta Silgisi
+* **❖ Yazı Tahtaları**: Yazı Tahtası
+
+### → Dosyalama ve Arşivleme
+* **❖ Plastik Klasörler**:  Plastik Klasör
+* **❖ Poşet Dosyalar**: Poşet Dosya
+* **❖ Arşiv Kutusu**: Arşiv Kutusu
+* **❖ Askılı Dosyalar**: Askılı Dosya
+* **❖ Dosya Ayracı**: Dosya Seperatör Ayraç
+* **❖ Evrak Dosyası**:  Evrak Dosyası
+* **❖ Sıkıştırmalı Dosya**: Sıkıştırmalı Dosya
+* **❖ Şömiz**: Şömiz 
+* **❖ Karton Klasörler**: Karton Klasör
+* **❖ Sekreterlikler**: Sekreterlik 
+* **❖ Sunum Dosyaları**:  Sunum Dosyası
+* **❖ Tanıtım Klasörleri**: Tanıtım Klasörü
+* **❖ Telli Dosyalar**:Telli Dosya
+
+### → Gönderi ve Paketleme
+* **❖ Kargo Ürünleri**: Kargo Kutusu, Kargo Poşeti, Gönderi Ambalajı
+* **❖ Poşet Çeşitleri**: Kilitli Poşet, Hışır Poşet, kargo poşeti
+* **❖ Kilitli Poşet**: Kilitli Şeffaf Torba
+* **❖ Balonlu Naylon**: Balonlu Ambalaj Naylonu
+* **❖ Barkod Etiketleri**: Barkod Etiketi
+* **❖ Beyaz Etiketler**: beyaz Etiket
+* **❖ Koli Bandı**:Koli Bandı
+* **❖ Koli Bandı Makinesi**: Koli Bandı Makinesi
+* **❖ Taşıma Kolisi**: karton kutu, taşıma kolisi
+* **❖ Marker Kalem**: Marker kalem
+* **❖ Palet Streç Film**: Endüstriyel Palet Streç Film
+* **❖ Paket Lastikleri**: Paket Lastiği
+* **❖ Kılçık Tabancası ve Malzemeleri**: Etiket Kılçık Tabancası, Etiket Kılçığı
+* **❖ Lojistik Etiketleri**: Lojistik Etiketi, Dikkat Kırılır Etiketi
+
+### → Yazıcı ve Fotokopi Kağıtları
+* **❖ Fotokopi Kağıtları**: Fotokopi Kağıdı, A4 Kağıt, A3 Kağıt, A5 Kağıt, 80 gr Kağıt, Gramajlı Kağıt
+* **❖ Fotoğraf Kağıtları**: Fotoğraf Kağıdı
+* **❖ Renkli Fotokopi Kağıtları**: Renkli Fotokopi Kağıdı
+* **❖ Sürekli Form Kağıtları**: Sürekli Form Kağıdı
+
+### → Teknik ve Özel Kağıtlar
+* **❖ Karbon Kağıdı**: Karbon Kağıdı
+* **❖ Plotter Kağıtları**: Plotter Kağıdı
+
+### → Termal Rulolar
+* **❖ Yazarkasa ve Pos Ruloları**: POS Rulosu, Yazarkasa Rulosu
+
+### → Zarflar
+* **❖ CD/DVD ve Mektup Zarfları**: CD Zarfı, Mektup Zarfı
+* **❖ Diplomat ve Para Zarfları**: Diplomat Zarf, Para Zarfı
+* **❖ Hava Kabarcıklı Zarflar**: Balonlu Koruyucu Kargo Zarfı
+* **❖ Torba Zarflar**: Torba Zarf 
+
+### → Etiketler ve Etiket Makinaları
+* **❖ Barkod ve Etiket Yazıcı**: Termal Barkod Yazıcı
+* **❖ Barkod Etiketleri**:  Barkod Etiketi
+* **❖ Beyaz Etiketler**:  Beyaz Etiket
+* **❖ Etiket Makinesi**: Etiket Makinesi
+* **❖ Etiket Makinesi Etiketleri**: Etiket Makinesi Şerit Kartuşu
+* **❖ Nokta Etiketleri**:  Nokta Etiketi
+* **❖ Lojistik Etiketleri**: Ulaşım Lojistik Etiketi
+* **❖ Renkli Laser Etiketler**: Renkli Lazer Etiket
+* **❖ Adres Etiketi**: Adres Etiketi 
+* **❖ Şeffaf Etiket**: Şeffaf  Etiket
+* **❖ Raf Etiketleri**: Market Şeffaf Raf Etiketliği
+
+---
+
+## • Temizlik ve Sağlık
+
+### → Kağıt Temizlik Ürünleri
+* **❖ Kağıt Havlular**:  Kağıt Havlu
+* **❖ Tuvalet Kağıtları**: Tuvalet Kağıdı
+* **❖ Islak Mendiller**:Islak Mendili
+* **❖ Peçete ve Dispenserleri**:  Peçete, peçete dispenseri
+* **❖ Kağıt Havlu Dispenserleri**: Kağıt Havlu Dispenseri
+* **❖ Tuvalet Kağıdı Dispenserleri**: Tuvalet Kağıdı Dispenseri
+* **❖ Klozet Kapak Örtüsü ve Dispenseri**: Klozet Kapak Örtüsü,Klozet Kapak Örtüsü dispenseri
+* **❖ Muayene Masa Örtüsü**: Muayene Masa Örtüsü
+
+### → Endüstriyel Temizlik Ürünleri
+* **❖ Profesyonel Kimyasallar & Endüstriyel Deterjanlar**: Endüstriyel Deterjanı, Endüstriyel Yağ Çözücü,Profesyonel Kimyasal
+* **❖ Endüstriyel Temizlik Ekipmanları**: Kat Hizmetleri Temizlik Arabası, Zemin Otomat Paspası, Endüstriyel Temizlik Ekipmanları
+* **❖ Endüstriyel Mutfak Malzemeleri**: Endüstriyel Mutfak Malzemeleri
+* **❖ Endüstriyel Atık Yönetimi**: Geri Dönüşüm Sıfır Atık Kovası, Tıbbi Atık Kovası, Endüstriyel Atık Yönetimi
+* **❖ Endüstriyel Dispenser ve Aparatlar**: Endüstriyel Dispenser, Dezenfektan Dispenseri
+
+### → Tuvalet - Banyo Temizliği
+* **❖ Çöp Torbaları**: Çöp Torbası
+* **❖ Kağıt Havlular**: Kağıt Havlu
+* **❖ Kağıt Havlu Dispenserleri**: Kağıt Havlu Dispenseri
+* **❖ Klozet Koku Gidericiler**: Klozet koku
+* **❖ Klozet Kapak Örtüsü ve Dispenseri**: Klozet Kapak Örtüsü, Klozet Kapak Örtüsü Dispenseri
+* **❖ Sıvı Sabunluk**: Sıvı Sabunluk
+* **❖ Sabunlar**: Katı Sabun, Sıvı Sabun, Antibakteriyel Sabun
+* **❖ Temizlik Bezleri**:Temizlik Bezi
+* **❖ Tuvalet Kağıtları**: Tuvalet Kağıdı
+* **❖ Tuvalet Kağıdı Dispenserleri**: Tuvalet Kağıdı Dispenseri
+* **❖ El Kurutma Makinesi**: El Kurutma Makinesi
+
+### → Ofis Temizlik Ürünleri
+* **❖ Çamaşır Suları**: Çamaşır Suyu
+* **❖ Çöp Kovaları**: Çöp Kovası
+* **❖ Çöp Torbaları**: Çöp Torbası
+* **❖ Oda Kokuları**: Oda Kokusu, Oda Spreyi
+* **❖ Temizlik Bezleri**:Temizlik Bezi
+* **❖ Temizlik Mopları ve Yedekleri**:Temizlik Mop Yedeği, Temizlik mop
+* **❖ El Dezenfektanları**: El Dezenfektanı
+* **❖ Böcek İlaçları**: Sinek ve Böcek İlacı Sprey
+
+### → Çamaşır Deterjanı
+* **❖ Sıvı Deterjan**: Sıvı Çamaşır Deterjanı
+* **❖ Toz Deterjan**: Toz Çamaşır Deterjanı
+* **❖ Yumuşatıcı**: Çamaşır Yumuşatıcı
+
+### → Leke Çıkarıcı
+* **❖ Kireç Çözücü**: Kireç Çözücü
+* **❖ Yağ Sökücü**: Yağ Sökücü
+* **❖ Lavabo Açıcı**:  Lavabo Açıcı
+
+### → Yardımcı Temizlik Gereçleri ve Yedekleri
+* **❖ Temizlik Setleri ve Moplar**: Temizlik Seti, Mop, Döner Başlıklı Mop, Temizlik Kovası, Mop Sapı, Paspas Seti
+* **❖ Mop ve Temizlik Yedekleri**: Mop Yedeği, Mop Ucu, Paspas Yedeği, Mikrofiber Mop Başlığı, Mop Aparatı
+* **❖ Tuvalet Fırçası**: WC Tuvalet Fırçası 
+* **❖ Tüy Toplayıcı**: Tüy Toplayıcı
+* **❖ Çekçek**: Zemin Su Çekçeği
+* **❖ Cam Sileceği**: Cam Silme Aparatı
+* **❖ Temizlik Fırçası**: Temizlik Fırçası
+* **❖ Faraş**: Faraş 
+* **❖ Yüzey Kazıma Aparatı**: Yüzey Kazıma Aparatı
+
+### → Yüzey Temizlik Ürünleri
+* **❖ Yüzey Temizleyici**:  Yüzey Temizleyici
+* **❖ Arap Sabunu**: Arap Sabunu
+* **❖ Cam Temizleyiciler**: Cam Temizleme Spreyi / Cam Sil
+* **❖ Ahşap Temizleyici**: Ahşap Temizleyici
+* **❖ Mutfak ve Banyo Temizleyicileri**: Mutfak ve Banyo Temizleyicileri
+* **❖ Yüzey Temizleme Havlusu**: Yüzey Temizleme Havlusu
+
+### → Ağız Bakım Ürünleri
+* **❖ Diş Macunu**: Diş Macunu
+* **❖ Diş Fırçası**: Diş Fırçası
+* **❖ Diğer Ağız Bakım Ürünleri**: Ağız Bakım Suyu, Diş İpi, Dil Temizleyici
+
+### → Kişisel Bakım Ürünleri
+* **❖ Islak Mendiller**: Islak  Mendil
+* **❖ Kolonya**: Kolonyası 
+* **❖ Kişisel Hijyen Ürünleri**: Hijyenik Ped, deodorant , roll-on
+* **❖ El Dezenfektanları**: El Dezenfektanı
+* **❖ Tıraş Bıçağı**: Kullan At Tıraş Bıçağı, Tıraş Makinesi Yedeği
+
+### → Mutfak Temizlik Ürünleri
+* **❖ Çöp Torbaları**: Mutfak Çöp Poşeti
+* **❖ Kağıt Havlular**: Kağıt Havlu
+* **❖ Mutfak ve Tezgah Temizliği**: bulaşık deterjanı, temizlik bezi
+* **❖ Peçete ve Dispenserleri**: Mutfak Peçetesi ve peçete dispenseri
+* **❖ Bulaşık Süngeri**: Bulaşık Süngeri
+* **❖ Bulaşık Teli**: Bulaşık Teli
+
+### → Bulaşık Deterjanları
+* **❖ Sıvı Bulaşık Deterjanı**: sıvı Bulaşık Deterjanı
+* **❖ Bulaşık Makinesi Deterjanı**: Bulaşık Makinesi Tablet / Kapsül / sıvı
+* **❖ Parlatıcı**: Bulaşık Makinesi Parlatıcısı
+* **❖ Bulaşık Makinesi Tuzu**: Bulaşık Makinesi Tuzu
+
+### → Eldivenler
+* **❖ Bulaşık ve Temizlik Eldiveni**: Bulaşık Temizlik Eldiveni
+* **❖ Muayene Eldiveni**:  Muayene Eldiveni, Lateks Eldiven
+
+---
+
+## • Gıda ve Mutfak
+
+### → Temel Gıda Ürünleri
+* **❖ Kahvaltılık**: Peynir, Zeytin, Bal, Reçel, Fındık Kreması, tereyağ
+* **❖ Kuru Bakliyat**: Pirinç, Kırmızı Mercimek, Nohut, Kuru Fasulye, Bulgur
+* **❖ Makarna**: Spagetti Makarna, Penne Makarna, Şehriye
+* **❖ Sıvı Yağ**: sıvı yağ
+* **❖ Tuz ve Baharat**: Sofra Tuzu, baharat
+* **❖ Kahvaltılık Gevrek**: kahvaltılık gevrek
+* **❖ Ramazan Kolileri**:  Ramazan Kolisi
+* **❖ Bayram İkramlıkları**: Bayramlık Çikolata ve Şeker
+
+### → Şekerler
+* **❖ Toz Şekerler**: Toz Şeker
+* **❖ Küp Şekerler**: Küp Şeker 
+* **❖ Stick Şeker**: Stick Toz Şeker
+
+### → Çaylar
+* **❖ Bardak Poşet Çaylar**: Bardak Poşet Çay
+* **❖ Bitki Çayları**: Ihlamur, Yeşil Çay, Papatya Çayı, Form Çayı,bitki çayı
+* **❖ Demlik Poşet Çaylar**: Demlik Poşet Çay
+* **❖ Dökme Çaylar**: Siyah Dökme Çay
+* **❖ Meyve Çayı**: Meyve Çayı
+
+### → İçecekler
+* **❖ Gazlı İçecekler**: Gazlı İçecek
+* **❖ Meyve Suları**: Meyve Suyu
+* **❖ Sıcak Çikolata**: Sıcak Çikolata 
+* **❖ Su**:su 
+* **❖ Soda ve Maden Suyu**: Sade Maden Suyu, Soda
+* **❖ Sütler**: Süt
+* **❖ Enerji İçeceği**: Enerji İçeceği
+* **❖ Soğuk Çaylar**: Soğuk Çay
+* **❖ Toz İçecek**:  Toz İçecek
+* **❖ Soğuk Kahveler**: Soğuk Kahve
+
+### → Kahveler
+* **❖ Türk Kahvesi**: Türk Kahvesi
+* **❖ Filtre Kahveler**:  Filtre Kahve
+* **❖ Hazır Kahveler**: Hazır Kahve
+* **❖ Süt Tozu ve Kahve Kreması**: Kahve Kreması, Süt Tozu
+* **❖ Çekirdek Kahveler**: Çekirdek Kahve
+* **❖ Kapsül Kahveler**: Kapsül Kahve
+* **❖ Espresso Kahve**: Espresso Kahve
+* **❖ Kahve Makineleri**: Kahve Makinesi
+* **❖ Filtre Kahve Kağıdı**: Filtre Kahve Kağıdı 
+* **❖ Kahve Şurupları**: Kahve Şurubu
+
+### → Kullan At Mutfak Malzemeleri
+* **❖ Gıda Ambalaj Malzemeleri**: Alüminyum Folyo, Streç Film, Pişirme Kağıdı
+* **❖ Karıştırıcılar**: Ahşap Karıştırıcısı
+* **❖ Karton Bardaklar**: Karton Bardagı
+* **❖ Kullan At Kaşık - Çatal ve Bıçaklar**: Plastik Çatal, Plastik Kaşık, plastik bıçak
+* **❖ Kullan At Tabaklar**: Karton Tabak, Plastik Tabak
+* **❖ Peçete ve Dispenserleri**: Peçete, peçete dispenseri
+* **❖ Plastik Bardaklar**: Plastik  Bardak
+
+### → Atıştırmalıklar
+* **❖ Bisküvi ve Kekler**: Bisküvi, Kek, Halley
+* **❖ Diyet Ürünler**: Form Kepekli Bisküvi, Mısır Patlağı, Gevrek Ekmek, diyet atıştırmalık
+* **❖ Gofret ve Çikolatalar**: Çikolata, gofret
+* **❖ Kuruyemiş**: kuruyemiş
+* **❖ Tuzlu Atıştırmalıklar**: Patates Cipsi, Mısır Cipsi, Çubuk Kraker, tuzlu bisküvi, tuzlu atıştırmalık
+* **❖ Bayram İkramlıkları**: Bayram çikolatası
+
+### → Mutfak Malzemeleri ve Gereçleri
+* **❖ Çay Bardakları**: çay bardağı
+* **❖ Kahve Bardakları**: kahve bardağı
+* **❖ Saklama Kapları**: Saklama Kabı
+* **❖ Su Bardağı ve Sürahiler**: Su Bardağı, Sürahi
+* **❖ Kaşık - Çatal ve Bıçaklar**: bıçak, Kaşık, Çatal
+* **❖ Termoslar**: Termos
+
+### → Kahve Makineleri
+* **❖ Türk Kahvesi Makinesi**: Türk Kahvesi Makinesi
+* **❖ Filtre Kahve Makinesi**: Filtre Kahve Makinesi
+* **❖ Kapsül Kahve Makinesi**: Kapsül Kahve Makinesi
+* **❖ Otomatik Kahve Makinesi**: Otomatik Espresso Makinesi
+* **❖ Manuel Espresso Makinesi**: Manuel Espresso Makinesi
+* **❖ Elektrikli Cezve**: Elektrikli Cezve
+
+### → Küçük Ev Aletleri
+* **❖ Çay Makinesi**: Çay Makinesi
+* **❖ Su Isıtıcıları**: Su Isıtıcı
+* **❖ Su Sebilleri**:  Su Sebili
+* **❖ Tost Makinesi**: Tost Makinesi
+* **❖ Fırın**: Mini Fırın
+* **❖ Elektrikli Ocak**: Elektrikli Ocak
+* **❖ Buzdolabı**: Buzdolabı
+
+---
+
+## • Kartuş - Toner
+
+### → Kartuşlar
+* **❖ Mürekkep Kartuşları**: Yazıcı Kartuşu, Mürekkep Kartuşu, Kartuş
+* **❖ Yazıcı Mürekkepleri**: Yazıcı Mürekkebi, Tanklı Yazıcı Mürekkebi, Şişe Mürekkep
+
+### → 3D Yazıcı Filament
+* **❖ PLA Filament**: 3D Yazıcı PLA Filament
+
+### → Drumlar ve Şeritler
+* **❖ Yazıcı Drum Üniteleri**: Lazer Yazıcı Drum, Drum Ünitesi
+* **❖ Yazıcı Şeritleri**: Yazıcı Şeridi, Nokta Vuruşlu Şerit, Pos Şeridi
+
+### → Tonerler
+* **❖ Orijinal Tonerler**: Orijinal Toner, Lazer Yazıcı Toneri, Lazer Toner
+
+### → Muadil Tonerler
+* **❖ Muadil Tonerler**: Muadil Toner, Muadil Lazer Toner, Muadil Kartuş, Lazer Toner
+
+---
+
+## • Mobilya ve Hırdavat
+
+### → Ofis Mobilyaları
+* **❖ Dolap ve Kitaplık**: Kitaplık, Ofis Dolabı
+* **❖ Çalışma ve Ofis Sandalyesi**: çalışma sandalyesi ofis sandalyesi
+* **❖ Çalışma ve Ofis Masası**: Çalışma Masası, Ofis Masası
+* **❖ Ofis Tipi Askılıklar**: ofis askılık
+* **❖ Keson**: Ofis Keson
+* **❖ Ortopedik Ofis Ürünleri**: Ortopedik ofis
+
+### → Kamp ve Bahçe Ürünleri
+* **❖ Bahçe ve Sulama Ürünleri**: Bahçe Hortumu, Sulama Fıskiyesi
+* **❖ Kamp Sandalyeleri ve Malzemeleri**: Kamp Sandalyesi, Kamp Masası, kamp malzemeleri
+
+### → Ofis Aksesuarları
+* **❖ Bayrak ve Flama**: bayrak, flama
+* **❖ Duvar ve Masa Saatleri**: Duvar Saati, Masa Saati
+* **❖ Küllükler**:  Küllük
+* **❖ Paspas**: halı Paspas
+* **❖ Dekoratif Masaüstü Ürünler**: Masa Organizeri, masa dekorayonu
+
+### → Aydınlatma ve Elektrik Ürünleri
+* **❖ Ampuller**: Ampul 
+* **❖ Işıldak ve Fenerler**: Işıldak, El Feneri
+* **❖ Uzatma Kabloları**:  Uzatma Kablosu
+* **❖ Elektrik Malzemeleri**: Anahtar Priz, Elektrik İzolasyon Bandı,elektrik malzemeleri
+* **❖ Masa Lambaları**: Masa Lambası
+
+### → Hırdavat
+* **❖ Elektrikli El Aletleri**:elektrikli el aletleri
+* **❖ Metre ve Ölçüm Aletleri**: Şerit Metre, Lazer Metre, Dijital Kumpas, ölçüm aletleri
+* **❖ Alet Takım Çantası**:  Alet Takım Çantası
+* **❖ El Aletleri**: Pense, Tornavida Seti, Kurbağacık Anahtar, el aleti
+* **❖ Maskeleme ve Çift Taraflı Bantlar**:  Maskeleme Bandı, Çift Taraflı Bant
+* **❖ Yük Taşıma Arabası**: Katlanabilir El Arabası, Platform Taşıma Arabası
+* **❖ Merdivenler**: Alüminyum Ev ve Ofis Merdiveni
+* **❖ Özel ve Kaydırmaz Bantlar**:  Kaydırmaz Bant, İkaz Bandı
+* **❖ Balonlu Naylon**: Balonlu  Naylonu
+* **❖ Palet Streç Film**: Palet Streç Film
+* **❖ Taşıma Kolisi**: Taşıma Kolisi
+* **❖ Koli Bandı**:  Koli Bandı
+* **❖ Koli Bandı Makinesi**: Koli Bandı Makinesi
+* **❖ Yağlayıcı ve Pas Çözücüler**: Pas Sökücü,Yağlayıcı Sprey
+* **❖ Yapıştırıcılar ve Silikonlar**: yapıştırma silikon, yapıştırıcı
+* **❖ Para Kasası**: Para Kasası
+* **❖ Asma Kilit ve Kapı Kilidi**:Asma Kilit, Kapı Kilidi
+
+### → İş Sağlığı ve Güvenliği
+* **❖ İş Ayakkabısı**:  İş Ayakkabısı
+* **❖ İş Güvenliği Malzemeleri**: iş güvenlik malzemeleri
+* **❖ İlk Yardım Malzemeleri**: ilk yardım
+* **❖ Uyarı ve Yönlendirme Levhaları**: Kaygan Zemin Levhası, Acil Çıkış Levhası, uyarı levhası, yönlendirme levhası
+* **❖ Yaka Kartı ve Aksesuarları**:  Yaka Kartı, Yaka Kartı İpi, Yo-Yo Aksesuar
+* **❖ İş Eldiveni**: İş Eldiveni
+* **❖ Emniyet Şeridi**: Emniyet Şeridi
+* **❖ Uyarı ve Yer İşaret Bandı**: Zemin İşaretleme Bandı
+* **❖ Yangın Tüpü**: Yangın Söndürme Tüpü
+* **❖ İş Elbisesi**: Reflektörlü İkaz Yeleği, İş Pantolonu, iş elbisesi
+
+### → Otomobil ve Motosiklet Ürünleri
+* **❖ Araç Aksesuarları**: Araç Koltuk Arkası Organizer, Telefon Tutucu, Cam Güneşliği, araç aksesuar
+* **❖ Araç Ekipmanları**: araç ekipmanı
+* **❖ Araç Bakım ve Temizlik Ürünleri**: Oto Şampuanı, Hızlı Cila Sprey, Antifrizli Cam Suyu, araç bakım, araba tamizliği
+* **❖ Kaza Tespit Tutanağı**: Kaza Tespit Tutanağı
+
+---
+
+## • Teknoloji
+
+### → Ofis Teknolojisi
+* **❖ Barkod Okuyucular**: Barkod Okuyucu
+* **❖ Ciltleme Makineleri**: Ciltleme Makinesi
+* **❖ Etiket Makinesi**:  Etiket Makinesi
+* **❖ Kağıt Kesme Makinesi**: Kağıt Kesme Makinesi
+* **❖ Hesap Makineleri**: Hesap Makinesi
+* **❖ Kağıt İmha Makineleri**:  Kağıt İmha Makinesi
+* **❖ Kesintisiz Güç Kaynakları**: Kesintisiz Güç Kaynağı
+* **❖ Laminasyon Makineleri**: Laminasyon Makinesi
+* **❖ Para Sayma ve Kontrol Ürünleri**: Sahte Yakalayan Kağıt Para Sayma Makinesi
+* **❖ Barkod ve Etiket Yazıcı**: Termal Barkod Yazıcı
+* **❖ El Terminalleri**: El Terminali
+
+### → Oyun Konsolu ve Aksesuarları
+* **❖ PlayStation**: PlayStation
+* **❖ Xbox**: xbox
+
+### → TV, Ses ve Görüntü Sistemleri
+* **❖ Televizyon**: Televizyon
+* **❖ Televizyon Aksesuarları**: TV Duvar Askı Aparatı, televizyon aksesuarı, TV kumandası
+* **❖ Projeksiyon Cihazı**:Projeksiyon Cihazı
+* **❖ Projeksiyon Aksesuarları**: Projeksiyon aksesuar
+* **❖ Hoparlör**: Hoparlör
+* **❖ Güvenlik Sistemleri**: IP Güvenlik Kamerası, Güvenlik sistemleri
+
+### → Beyaz Eşya
+* **❖ Bulaşık Makinesi**: Bulaşık Makinesi
+* **❖ Buzdolabı**: Buzdolabı
+* **❖ Fırın**: Fırın
+* **❖ Su Sebilleri**: Su Sebili
+
+### → Pil
+* **❖ AA / Kalem Pil**: AA Kalem Pil
+* **❖ AAA / İnce Kalem Pil**: AAA İnce Kalem Pil
+* **❖ D / Büyük Pil**: D Büyük Pil
+* **❖ C / Orta Pil**: C Orta Pil
+* **❖ Düğme Pil**: Düğme Pil
+* **❖ Şarj Edilebilir Pil**: Şarj Edilebilir pil
+* **❖ Pil Şarj Aleti**: Pil Şarj Cihazı
+
+### → Kulaklık
+* **❖ Mikrofonlu Kulaklık**: Mikrofonlu Kulaklık, Oyuncu Kulaklığı
+* **❖ Bluetooth Kulaklık**: Bluetooth Kulaklık, TWS Kulaklık
+* **❖ Kulak Üstü Kulaklık**: Kulak Üstü Kulaklık
+* **❖ Kulak İçi Kulaklık**: Kulak İçi Kulaklık
+
+### → Bilgisayar ve Aksesuarları
+* **❖ Notebook - Laptop**: Laptop, Dizüstü Bilgisayar, Notebook
+* **❖ Masaüstü Bilgisayar**: Masaüstü Bilgisayar 
+* **❖ Klavyeler**: Klavye
+* **❖ Mouse**:  Mouse
+* **❖ Monitörler**:  Monitör
+* **❖ Mouse Pad**: Mouse Pad
+* **❖ Notebook Soğutucu ve Yükselticiler**: Notebook Soğutucu, Laptop Yükseltici Stand
+* **❖ Notebook ve Sırt Çantaları**: Laptop  Çantası
+* **❖ Ekran Temizlik Ürünleri**: Ekran Temizleme Spreyi 
+* **❖ Tablet**: Tablet Bilgisayar
+* **❖ Wifi Güçlendirici & Menzil Arttırıcı**: Wi-Fi Sinyal Güçlendirici Menzil Genişletici
+* **❖ Notebook Adaptörü**: Laptop Şarj Adaptörü 
+* **❖ Bilgisayar Kılıfı**: Laptop Koruma Kılıfı
+
+### → Teknik Kablolar
+* **❖ HDMI Kablo**: HDMI Kablo
+* **❖ USB Hub Çoklayıcı**: USB Hub Çoklayıcı, Type-C Multiport Adapter
+* **❖ Şarj ve Data Kablosu**: Type-C / Lightning / Micro-USB Şarj Kablosu
+
+### → Veri Depolama Ürünleri
+* **❖ Boş CD ve DVD'ler**: Boş CD, Boş DVD
+* **❖ Hafıza Kartları**: Hafıza Kartı
+* **❖ USB Bellekler**: USB Flash Bellek
+* **❖ Harici Harddiskler**:  Harici Harddisk, Taşınabilir SSD
+
+### → Telefon
+* **❖ Masaüstü Telefonlar**: Masaüstü Kablolu Telefon
+* **❖ Telsiz (Dect) Telefonlar**: Dect Telsiz Ev Telefonu
+* **❖ El Telsizleri**: PMR Lisanssız El Telsizi
+* **❖ IP Telefonlar**: IP Ofis Telefonu
+* **❖ Cep Telefonları**: Cep Telefonu
+
+### → Telefon Aksesuarları
+* **❖ Powerbank**: Powerbank
+* **❖ Şarj ve Data Kablosu**: Telefon Şarj Kablosu, telefon data kablosu
+* **❖ Şarj Cihazı**: telefon şarj cihazı
+* **❖ Telefon Kılıfı**: Telefon Kılıfı
+
+### → Yazıcılar
+* **❖ Barkod ve Etiket Yazıcı**: Barkod Yazıcı, etiket yazıcı
+* **❖ Lazer Yazıcılar**: Lazer Yazıcı
+* **❖ Mürekkep Püskürtmeli Yazıcılar**: Mürekkep Püskürtmeli Yazıcılar
+* **❖ Nokta Vuruşlu Yazıcılar**:Nokta Vuruşlu Yazıcı
+* **❖ Tarayıcı**: Doküman Tarayıcı
+* **❖ 3D Yazıcılar**: 3D Yazıcı
+
+### → Küçük Ev Aletleri
+* **❖ Çay Makinesi**: Çay Makinesi
+* **❖ Çay Otomatı**: Çay Otomatı
+* **❖ Su Isıtıcıları**:  Su Isıtıcı
+* **❖ Su Sebilleri**: Su Sebili
+* **❖ Tost Makinesi**: Tost Makinesi
+* **❖ Fırın**: Fırın
+* **❖ Elektrikli Ocak**: Elektrikli Ocak
+* **❖ Buzdolabı**: Buzdolabı
+* **❖ Saç Kurutma Makinesi**: Saç Kurutma Makinesi
+* **❖ Ütü**: Ütü
+* **❖ Elektrikli Süpürge**: elektrikli süpürge
+
+### → Kahve Makineleri
+* **❖ Türk Kahvesi Makinesi**: Türk Kahvesi Makinesi
+* **❖ Otomatik Kahve Makinesi**: Otomatik Espresso Makinesi
+* **❖ Manuel Espresso Makinesi**: Manuel Espresso Makinesi
+* **❖ Elektrikli Cezve**: Elektrikli Cezve
+
+### → İklimlendirme
+* **❖ Isıtıcılar**: Isıtıcı, Elektrikli Soba
+* **❖ Vantilatörler**: Vantilatör
+* **❖ Klimalar**: Klima
+* **❖ Hava Temizleme Cihazı**: Hava Temizleme Cihazı

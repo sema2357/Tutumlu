@@ -1,0 +1,6 @@
+@PriceAggregator.Api_HostAddress = http://localhost:5196
+
+GET {{PriceAggregator.Api_HostAddress}}/api/products?page=1&pageSize=24
+Accept: application/json
+
+###

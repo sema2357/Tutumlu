@@ -1,0 +1,439 @@
+/* Category mega menu — full-width panel anchored right below the header. */
+.category-mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(15, 45, 74, 0.08);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+}
+
+.category-mega-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.mega-menu-inner {
+  display: flex;
+  max-height: 72vh;
+}
+
+/* Level 0 — sectors (Market / Mobilya). A narrow icon rail: there are only a couple of
+   these, so it doesn't need the width Level 1's longer category names get. */
+.mega-col-0 {
+  width: 84px;
+  flex-shrink: 0;
+  list-style: none;
+  overflow-y: auto;
+  padding: 0.5rem 0;
+  border-right: 1px solid rgba(15, 45, 74, 0.07);
+  background: rgba(15, 45, 74, 0.02);
+}
+
+.mega-l0-item {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.35rem;
+
+  padding: 0.75rem 0.35rem;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 0.7rem;
+
+  font-weight: 600;
+
+  font-family: inherit;
+
+  color: #374151;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  border-radius: 14px;
+
+  margin: 0.2rem;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.mega-l0-item.active,
+.mega-l0-item.selected {
+  background: rgba(15,76,129,0.12);
+
+  color: var(--navy);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(15,76,129,0.12);
+}
+
+.mega-l0-item:hover {
+  background: rgba(15,76,129,0.06);
+
+  transform: translateY(-2px);
+}
+
+.mega-l0-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.mega-l0-label {
+  display: block;
+  width: 100%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.05em;
+}
+
+/* Level 1 — main categories */
+.mega-col-1 {
+  width: 230px;
+  flex-shrink: 0;
+  list-style: none;
+  overflow-y: auto;
+  padding: 0.5rem 0;
+  border-right: 1px solid rgba(15, 45, 74, 0.07);
+}
+
+.mega-l1-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: #374151;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+
+.mega-l1-item.active,
+.mega-l1-item.selected {
+  background: var(--navy-tint-strong);
+  color: var(--navy);
+}
+
+.mega-l1-icon {
+  font-size: 1rem;
+  line-height: 1;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.mega-l1-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mega-l1-arrow {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  opacity: 0.3;
+  transition: opacity 0.15s;
+}
+
+.mega-l1-item:hover .mega-l1-arrow,
+.mega-l1-item.active .mega-l1-arrow {
+  opacity: 0.6;
+}
+
+/* Level 2 — sub categories */
+.mega-col-2 {
+  width: 220px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  padding: 1rem 0.5rem;
+  border-right: 1px solid rgba(15, 45, 74, 0.07);
+}
+
+.mega-col-2-title {
+  padding: 0 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--navy);
+  opacity: 0.4;
+}
+
+.mega-col-2-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.mega-l2-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: #4b5563;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+
+.mega-l2-item.active,
+.mega-l2-item.selected {
+  background: var(--navy-tint-strong);
+  color: var(--navy);
+}
+
+.mega-l2-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+  opacity: 0.3;
+}
+
+.mega-l2-meta svg {
+  width: 10px;
+  height: 10px;
+}
+
+.mega-l2-count {
+  font-size: 0.75rem;
+}
+
+/* Level 3 — items */
+.mega-col-3 {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  padding: 1rem 1.5rem;
+}
+
+.mega-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.mega-breadcrumb svg {
+  width: 10px;
+  height: 10px;
+}
+
+.mega-breadcrumb-current {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.mega-col-3-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--navy);
+  opacity: 0.35;
+  margin-bottom: 0.75rem;
+}
+
+.mega-item-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.375rem;
+}
+
+.mega-l3-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--navy-tint);
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: var(--navy);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.1s;
+}
+
+.mega-l3-item:hover {
+  transform: scale(1.02);
+  background: rgba(15, 45, 74, 0.09);
+}
+
+.mega-l3-item:active {
+  transform: scale(0.95);
+}
+
+.mega-l3-item.selected {
+  background: var(--navy-tint-strong);
+  font-weight: 600;
+}
+
+.mega-l3-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--steel);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.mega-empty-state {
+  height: 100%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.25;
+  user-select: none;
+}
+
+.mega-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.mega-empty-state p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+/* Quick links bottom bar */
+.mega-quicklinks {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid rgba(15, 45, 74, 0.07);
+  background: rgba(240, 244, 248, 0.6);
+  flex-wrap: wrap;
+}
+
+.mega-quicklinks-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--navy);
+  opacity: 0.4;
+}
+
+.mega-quicklink {
+  padding: 0.375rem 0.75rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--navy-tint-strong);
+  color: var(--navy);
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.mega-quicklink:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .mega-menu-inner {
+    flex-direction: column;
+    max-height: 75vh;
+  }
+
+  .mega-col-0 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: none;
+    border-bottom: 1px solid rgba(15, 45, 74, 0.07);
+    max-height: none;
+  }
+
+  .mega-l0-item {
+    flex-direction: row;
+    width: auto;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .mega-col-1,
+  .mega-col-2 {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(15, 45, 74, 0.07);
+    max-height: 160px;
+  }
+
+  .mega-item-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#categoryRail > button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+

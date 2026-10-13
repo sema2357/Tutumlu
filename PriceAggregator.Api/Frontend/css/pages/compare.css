@@ -1,0 +1,152 @@
+.compare-page-wrap {
+  max-width: 1200px;
+  margin: 2rem auto 6rem;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.compare-page-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.compare-loading {
+  color: var(--color-text-secondary);
+  padding: 2rem 0;
+}
+
+.compare-table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.compare-table tbody tr:last-child th,
+.compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.compare-table th:first-child,
+.compare-table td:first-child {
+  width: 160px;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: #f8fafc;
+  position: sticky;
+  left: 0;
+}
+
+.compare-product-col {
+  min-width: 200px;
+}
+
+.compare-product-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.compare-product-remove {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.compare-product-remove:hover {
+  color: var(--color-danger);
+}
+
+.compare-product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.compare-product-title {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.compare-product-brand {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.compare-price-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.compare-price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-success);
+}
+
+.compare-cheapest-badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-success);
+  background: rgba(22, 163, 74, 0.12);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm, 4px);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.compare-empty-value {
+  color: var(--color-text-muted);
+}
+
+.compare-group-row td {
+  background: #f8fafc;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  position: static;
+}
+
+.compare-empty-state {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  color: var(--color-text-secondary);
+}
+
+.compare-empty-state a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
